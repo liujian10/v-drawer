@@ -14,9 +14,14 @@
     "drawer"
   ],
   "author": "mapleliu",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/liujian10/v-drawer/issues"
   },
-  "homepage": "https://github.com/liujian10/v-drawer#readme"
+  "homepage": "https://github.com/liujian10/v-drawer#readme",
+  "dependencies": {
+    "vue": "^2.5.9",
+    "vue-touch": "^1.1.0"
+  },
+  "devDependencies": {}
 }
