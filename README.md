@@ -4,7 +4,7 @@
 
 ## Install
 
-[![rc-drawer](https://nodei.co/npm/rc-drawer.png)](https://npmjs.org/package/rc-drawer)
+[![v-drawer](https://nodei.co/npm/rc-drawer.png)](https://npmjs.org/package/v-drawer)
 
 ## Development
 
@@ -21,7 +21,7 @@ npm run build
 
 ## Example
 
-
+http://localhost:3002/
 
 ## Usage
 
