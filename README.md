@@ -1,95 +1,40 @@
-# Vue Drawer
+# v-drawer
 
 ![demo](assets/sheet.jpg)
 
-# Install
+## Install
+
+[![rc-drawer](https://nodei.co/npm/rc-drawer.png)](https://npmjs.org/package/rc-drawer)
+
+## Development
 
 ```
-$ npm install --save
+# install
+npm install --save-dev v-drawer
+
+# run
+npm run dev
+
+# build
+npm run build
 ```
 
-# Usage
+## Example
 
-```html
-<template>
-  <section class="demo-drawer">
-    <div class="demo-drawer-main">
-      <v-drawer
-          :docked="docked"
-          :position="posList[position]"
-          :open="open"
-          :content-style="contentStyle"
-          :sidebar-style="sidebarStyle"
-          @open-change="onOpenChange">
-        <div class="drawer-content-main">
-          <h1>Drawer - 抽屉</h1>
-          <button @click="onOpenChange">Open: {{open}}</button>
-          <button @click="onPositionChange">Position: {{posList[position]}}</button>
-          <button @click="onDockedChange">Docked: {{docked}}</button>
-          <p>Click upper button to change</p>
-        </div>
-        <ul slot="sidebar" class="drawer-sidebar-ul">
-          <li v-for="n in 10" :key="n"
-              @click="clickAlert(`list-item-${n}`)">
-            {{`list-item-${n}`}}
-          </li>
-        </ul>
-      </v-drawer>
-    </div>
-  </section>
-</template>
-```
+
+
+## Usage
 
 ```js
 import Vue from 'vue';
-import VDrawer from '../index';
+import VDrawer from 'v-drawer';
 
 Vue.component(VDrawer.name, VDrawer);
-
-export default {
-  data() {
-    return {
-      drawerStyle: {
-      },
-      contentStyle: {
-        'text-align': 'center',
-        'padding-top': '50px'
-      },
-      sidebarStyle: {
-        'background-color': '#fff'
-      },
-      posList: ['left','top', 'right','bottom'],
-      position: 0,
-      docked: false,
-      open: false
-    }
-  },
-  methods: {
-    onOpenChange() {
-      this.open = !this.open;
-    },
-    onPositionChange() {
-      this.open = false;
-      this.position = ++this.position % 4;
-      setTimeout(function (_this) {
-        _this.onOpenChange();
-      }, 300, this);
-    },
-    onDockedChange() {
-      this.open = false;
-      this.docked = !this.docked;
-      setTimeout(function (_this) {
-        _this.onOpenChange();
-      }, 300, this);
-    },
-    clickAlert(info) {
-      alert(info);
-    }
-  }
-}
 ```
 
-# Options
+## API
+
+### props
 
 | 参数 | 说明 | 类型 | 默认值 | 可选值 |
 |-----------|-----------|-----------|-------------|-------------|
