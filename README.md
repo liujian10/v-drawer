@@ -1,5 +1,7 @@
 # Vue Drawer
 
+![demo](assets/sheet.jpg)
+
 # Install
 
 ```
