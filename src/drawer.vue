@@ -66,7 +66,7 @@
         default: function () {
           return {}
         }
-      },
+      }
     },
     data() {
       return {
