@@ -4,11 +4,11 @@
 
 ## Install
 
-[![v-drawer](https://nodei.co/npm/rc-drawer.png)](https://npmjs.org/package/v-drawer)
+[![v-drawer](https://nodei.co/npm/v-drawer.png)](https://npmjs.org/package/v-drawer)
 
 ## Development
 
-```
+```bash
 # install
 npm install --save-dev v-drawer
 
@@ -38,7 +38,7 @@ Vue.component(VDrawer.name, VDrawer);
 
 | 参数 | 说明 | 类型 | 默认值 | 可选值 |
 |-----------|-----------|-----------|-------------|-------------|
-| position | 抽屉所在位置 | `String` | `left` | `left` `right` `top` `bottom` |
+| position | 抽屉所在位置 | `String` | `left` | `left`,`right`,`top`,`bottom` |
 | open | 抽屉是否展开 | `Boolean` | - |
 | docked | 抽屉是否嵌入文档 | `Boolean` | - |
 | sidebar-style | 侧边栏样式 | `String` `Object` | - | - |
