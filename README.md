@@ -10,7 +10,7 @@
 
 ```bash
 # install
-npm install --save-dev v-drawer
+npm install --save v-drawer
 
 # run
 npm run dev
