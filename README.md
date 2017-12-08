@@ -21,7 +21,9 @@ npm run build
 
 ## Example
 
-http://localhost:3002/
+local: http://localhost:3002/
+
+online: http://mapleliu.com/v-drawer/
 
 ## Usage
 
