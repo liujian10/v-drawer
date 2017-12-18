@@ -29,9 +29,10 @@
   import Vue from 'vue';
   import VDrawer from '../index';
 
-  Vue.component(VDrawer.name, VDrawer);
-
   export default {
+    components: {
+      VDrawer
+    },
     data() {
       return {
         drawerStyle: {
@@ -47,11 +48,11 @@
         sidebarStyle: {
           'background-color': '#fff'
         },
-        posList: ['left','top', 'right','bottom'],
+        posList: ['left', 'top', 'right', 'bottom'],
         position: 0,
         docked: false,
         open: false
-      }
+      };
     },
     methods: {
       onOpenChange() {
@@ -60,14 +61,14 @@
       onPositionChange() {
         this.open = false;
         this.position = ++this.position % 4;
-        setTimeout(function (_this) {
+        setTimeout(function(_this) {
           _this.onOpenChange();
         }, 300, this);
       },
       onDockedChange() {
         this.open = false;
         this.docked = !this.docked;
-        setTimeout(function (_this) {
+        setTimeout(function(_this) {
           _this.onOpenChange();
         }, 300, this);
       },
@@ -75,7 +76,7 @@
         alert(info);
       }
     }
-  }
+  };
 </script>
 <style lang="less">
   @btnColor: #108ee9;
