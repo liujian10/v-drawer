@@ -1,4 +1,5 @@
 # v-drawer
+[![Build Status](https://travis-ci.org/liujian10/v-drawer.svg?branch=master)](https://travis-ci.org/liujian10/v-drawer)
 
 ![demo](assets/sheet.jpg)
 

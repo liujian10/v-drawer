@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "7"
 before_install:
-  - git config --global user.name "mapleliu"
+  - git config --global user.name "liujian10"
   - git config --global user.email "mapleliu1@gmail.com"
 script:
   - npm run build
